@@ -1,71 +1,63 @@
 body {
     margin:0;
+    width:100%;
+    height:100%;
+    background:rgb(54, 54, 105);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     overflow:hidden;
 }
 header {
-    background:rgb(64, 64, 128);
+    width:100%;
+    height:103vh;
     display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    position:fixed;
-    top:0;
-    width:100%;
-    height:100%;
     box-shadow: 
-    inset 0 -400px 1000px 00px rgb(0,0,0,0.3);
+    inset 0 -700px 1000px -300px rgb(0,0,0,0.3);
 }
 h2 {
     font-size:2rem;
-    color:rgb(255,255,255,.8);
+
     text-align:center;
     text-transform:uppercase;
     letter-spacing: 10px;
+    padding-left: 10px;
     line-height: 1.5em;
     font-family:'montserrat';
-    position:absolute;
-    z-index:4;
-    width:100%;
-    bottom:10%;
-    left:50%;
-    margin-left:5px;
-    transform:translate(-50%,50%);
+}
+.white-text {
+    color:rgb(255,255,255,.9);
 }
 .spaceship {
+    width:100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    position:absolute;
-    z-index:1;
     animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .overflow-box {
-    height:400px;
-    width:600px;
+    height:300px;
+    min-width:300px;
     overflow:hidden;
     display:flex;
     justify-content: center;
-    border-radius:50%;
-}
-.spaceship-rescaling-container {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    transform:scale(0.9);
+    border-radius:50% / 20%;
     position:relative;
-    z-index:3;
 }
 .spacehull {
-    width:600px;
-    height:600px;  
-    border-radius:100% 30px;
-    background:rgb(53, 53, 109);
+    width:450px;
+    height:450px;  
+    border-radius:100% 22.5px;
+    background:rgb(49, 49, 109);
     transform:rotate(-45deg);
-    position:relative;
+    position:absolute;
     top:130px;
     box-shadow: 
-    inset 510px -510px 150px -290px rgba(224, 255, 83, 0.3),
-    inset 670px -670px 10px -500px rgba(255, 255, 255, 0.2),
+    inset 400px -400px 150px -270px rgba(224, 255, 83, 0.8),
+    inset 450px -450px 10px -270px rgba(255, 255, 255, 0.3),
     inset 5px 50px 5px -43px rgba(255, 255, 255, .5),
     inset -50px -5px 5px -40px rgb(0, 0, 0, .2);
 }
@@ -78,64 +70,74 @@ h2 {
     display:flex;
 }
 .engines div {
-    height:80px;
-    width:60px;
+    height:60px;
+    width:45px;
     background:rgb(52, 52, 100);
     border-radius:50% / 20%;
-    margin:0 60px;
-    margin-top:360px;
+    margin:300px 45px;
+    margin-top:580px;
     position:relative;
     top:-40px;
 }
 .engines div::before {
     content:'';
     display:inline-block;
-    width:60px;
-    height:20px;
-    background:rgb(44, 44, 88);
+    width:45px;
+    height:15px;
+    background:rgb(48, 48, 96);
     border-radius: 50%;
 }
 .engines div:first-child {
     box-shadow:
-    0 -40px 20px 0px rgb(45, 45, 99),
-    0 -90px 60px 20px rgb(46, 46, 99),
-    inset -53px 0px 25px -39px rgba(224, 255, 83, 0.25),
-    inset 25px 0px 15px -20px rgba(255, 255, 255, 0.3);
+    0 -30px 15px 0px rgb(49, 49, 104),
+    0 -60px 15px 6px rgb(49, 49, 104),
+    0 -70px 45px 15px rgb(49, 49, 104),
+    inset -38px 0px 17px -29px rgba(224, 255, 83, 0.25),
+    inset 19px 0px 8px -14px rgba(255, 255, 255, 0.3);
 }
 .engines div:last-child {
     box-shadow:
-    0 -40px 20px 0px rgb(45, 45, 99),
-    0 -90px 60px 20px rgb(46, 46, 99),
-    inset 53px 0px 25px -39px rgba(224, 255, 83, 0.25),
-    inset -25px 0px 15px -20px rgb(0, 0, 0, .1);
+    0 -30px 15px 0px rgb(49, 49, 104),
+    0 -60px 15px 6px rgb(49, 49, 104),
+    0 -70px 45px 15px rgb(49, 49, 104),
+    inset 38px 0px 23px -29px rgba(224, 255, 83, 0.25),
+    inset -19px 0px 11px -15px rgb(0, 0, 0, .1);
 }
 .fire div {
-    height:80px;
-    width:54px;
+    height:60px;
+    width:39px;
     background:yellow;
-    margin:0 63px;
+    margin:0 48px;
     border-radius:10% 10% 50% 50% / 10% 10% 100% 100%;
     position:relative;
-    top:430px;
-    box-shadow: inset 0 115px 25px -60px rgb(255, 72, 0);
+    top:630px;
+    box-shadow: inset 0 80px 18px -39px rgb(255, 81, 0);
     animation: fire 1.5s ease-in-out infinite;
 }
 .cockpit {
-    height:150px;
-    width:150px;
+    height:100px;
+    width:100px;
     background:rgb(173, 162, 236);
     position:absolute;
     border-radius:50%;
+    margin-top:50px;
     box-shadow: 
     inset 10px 10px 10px 3px rgba(255, 255, 255, .4),
     inset -30px -5px 10px -15px rgb(0, 0, 0, .2);
 }
+article {
+    width:100%;
+    background:white;
+    padding:15px;
+}
+
 
 .stars div, .stars div:before, .stars div:after {
     background:white;
     position:absolute;
     box-shadow:0 0 5px 5px rgb(255,255,255,0.2);
     border-radius:50%;
+    z-index:-1;
 }
 .stars div:before, .stars div:after {
     content:'';
@@ -204,18 +206,6 @@ h2 {
     right:5%;
     top:-160%;
 }
-
-
-@keyframes spaceship-entry {
-    0% {transform:translate(0,2000px)rotate(0deg)}
-    100% {transform:translate(0,0px)rotate(0deg)}
-}
-@keyframes spaceship {
-    30% {transform:translate(-3px,-10px)rotate(0deg)}
-    60% {transform:translate(6px,10px)rotate(-0deg)}
-    80% {transform:translate(-2px,15px)rotate(0deg)}
-    100% {transform:translate(0,0px)rotate(0deg)}
-}
 @keyframes stars-slow {    
     100% {transform:translate(0,2950px);}
 }
@@ -227,15 +217,21 @@ h2 {
 }
 @keyframes fire {
     50% {transform:translate(0,5px)scalex(.85)}
-
 }
+@keyframes spaceship-entry {
+    0% {transform:translate(0,2000px)rotate(0deg)}
+    100% {transform:translate(0,0px)rotate(0deg)}
+}
+@keyframes spaceship {
+    30% {transform:translate(-5px,-40px)rotate(0deg)}
+    60% {transform:translate(5px,30px)rotate(-0deg)}
+    80% {transform:translate(11px,-5px)rotate(0deg)}
+    100% {transform:translate(0,0px)rotate(0deg)}
+}
+
+
 @media screen and (max-width: 1000px) {
     h2 {
         font-size:1.3rem;
-    }
-}
-@media screen and (max-width: 500px) {
-    h2 {
-        font-size:0.7rem;
     }
 }
