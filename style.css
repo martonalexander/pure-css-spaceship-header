@@ -17,20 +17,19 @@ header {
 }
 h2 {
     font-size:3rem;
-    color:rgb(255,255,255,.7);
+    color:rgb(255,255,255,.0);
     text-align:center;
     text-transform:uppercase;
     letter-spacing: 10px;
     line-height: 1.5em;
-    position:relative;
-    z-index:2;
     font-family:'montserrat';
     position:absolute;
     width:100%;
     top:50%;
     left:50%;
+    margin-left:5px;
     transform:translate(-50%,-50%);
-    animation:h2-fade 10s ease-in-out; 
+    animation:h2-fade 15s ease-in-out;
 }
 .spaceship {
     display:flex;
@@ -47,13 +46,11 @@ h2 {
     display:flex;
     justify-content: center;
     border-radius:50%;
-
 }
-.testblock {
-    width:1000px;
-    height: 5000px;
-    border:solid;
-    background:black;
+.spaceship-responsive-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 .spacehull {
     width:600px;
@@ -141,10 +138,6 @@ h2 {
     content:'';
     display:inline-block; 
 }
-.stars {
-
-    top:-1000px;
-}
 .stars div {
     height:2px;
     width:2px;
@@ -208,14 +201,16 @@ h2 {
     right:5%;
     top:-160%;
 }
+
+
 @keyframes spaceship-entry {
     0% {transform:translate(0,2000px)rotate(0deg)}
     100% {transform:translate(0,0px)rotate(0deg)}
 }
 @keyframes spaceship {
-    30% {transform:translate(0,-10px)rotate(0deg)}
-    60% {transform:translate(0,10px)rotate(-0deg)}
-    70% {transform:translate(0,15px)rotate(0deg)}
+    30% {transform:translate(-3px,-10px)rotate(0deg)}
+    60% {transform:translate(6px,10px)rotate(-0deg)}
+    80% {transform:translate(-2px,15px)rotate(0deg)}
     100% {transform:translate(0,0px)rotate(0deg)}
 }
 @keyframes stars-slow {    
@@ -228,11 +223,18 @@ h2 {
     100% {transform:translate(0,2050px);}
 }
 @keyframes fire {
-    50% {transform:translate(0,10px)scalex(.75)}
+    50% {transform:translate(0,5px)scalex(.85)}
 
 }
 @keyframes h2-fade {
     0% {color:rgb(255,255,255,.9); transform:translate(-50%,-50%);}
-    50% {color:rgb(255,255,255,.9); transform:translate(-50%,-50%);}
-    100% {color:rgb(255,255,255,0.7); transform:translate(-50%,-50%);}
+    40% {color:rgb(255,255,255,.9); transform:translate(-50%,-50%);}
+    100% {color:rgb(255,255,255,0.0); transform:translate(-50%,-50%);}
+}
+
+
+@media screen and (max-width: 1000px) {
+    h2 {
+        font-size:1.3rem;
+    }
 }
