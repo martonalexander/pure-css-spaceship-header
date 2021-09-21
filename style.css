@@ -16,20 +16,20 @@ header {
     inset 0 -400px 1000px 00px rgb(0,0,0,0.3);
 }
 h2 {
-    font-size:3rem;
-    color:rgb(255,255,255,.0);
+    font-size:2rem;
+    color:rgb(255,255,255,.8);
     text-align:center;
     text-transform:uppercase;
     letter-spacing: 10px;
     line-height: 1.5em;
     font-family:'montserrat';
     position:absolute;
+    z-index:4;
     width:100%;
-    top:50%;
+    bottom:10%;
     left:50%;
     margin-left:5px;
-    transform:translate(-50%,-50%);
-    animation:h2-fade 15s ease-in-out;
+    transform:translate(-50%,50%);
 }
 .spaceship {
     display:flex;
@@ -47,10 +47,13 @@ h2 {
     justify-content: center;
     border-radius:50%;
 }
-.spaceship-responsive-container {
+.spaceship-rescaling-container {
     display:flex;
     justify-content: center;
     align-items: center;
+    transform:scale(0.9);
+    position:relative;
+    z-index:3;
 }
 .spacehull {
     width:600px;
@@ -226,15 +229,13 @@ h2 {
     50% {transform:translate(0,5px)scalex(.85)}
 
 }
-@keyframes h2-fade {
-    0% {color:rgb(255,255,255,.9); transform:translate(-50%,-50%);}
-    40% {color:rgb(255,255,255,.9); transform:translate(-50%,-50%);}
-    100% {color:rgb(255,255,255,0.0); transform:translate(-50%,-50%);}
-}
-
-
 @media screen and (max-width: 1000px) {
     h2 {
         font-size:1.3rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    h2 {
+        font-size:0.7rem;
     }
 }
