@@ -56,10 +56,10 @@ h2 {
     position:absolute;
     top:130px;
     box-shadow: 
-    inset 400px -400px 150px -270px rgba(224, 255, 83, 0.8),
-    inset 450px -450px 10px -270px rgba(255, 255, 255, 0.3),
-    inset 5px 50px 5px -43px rgba(255, 255, 255, .5),
-    inset -50px -5px 5px -40px rgb(0, 0, 0, .2);
+    inset 400px -400px 150px -250px rgba(224, 255, 83, 0.8),
+    inset 450px -450px 10px -273px rgba(255, 255, 255, 0.3),
+    inset 5px 50px 5px -45px rgba(255, 255, 255, .5),
+    inset -50px -5px 5px -42px rgb(0, 0, 0, .2);
 }
 .thruster-container {
     position:absolute;
