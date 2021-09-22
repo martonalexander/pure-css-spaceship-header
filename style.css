@@ -39,19 +39,18 @@ h2 {
 .spacehull {
     width:250px;
     height:250px;  
-    border-radius:95% 5% 40% 60% / 40% 5% 95% 60% ;
+    border-radius:50% 50% 50% 50% / 95% 95% 5% 5%;
     background:rgb(49, 49, 109);
-    transform:rotate(-45deg);
     position:absolute;
     margin-top:80px;
     box-shadow: 
-    inset 60px -60px 120px -100px rgba(224, 255, 83,.5),
-    inset 15px -15px 10px -20px rgb(255, 248, 146,.5),
-    inset 5px 50px 5px -45px rgba(255, 255, 255, .5),
-    inset -50px -5px 5px -42px rgb(0, 0, 0, .2);
+    inset 0px -150px 90px -170px rgba(224, 255, 83,.4),
+    inset 50px 20px 20px -55px rgba(255, 255, 255, .5),
+    inset -60px -5px 65px -42px rgb(0, 0, 0, .5);
 }
 .thruster-container {
     position:absolute;
+    top:110px;
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +59,6 @@ h2 {
 .engines, .fire {
     display:flex;
     position:relative;
-    top:145px;
 }
 .engines div {
     height:60px;
@@ -82,18 +80,11 @@ h2 {
 }
 .engines div:first-child {
     box-shadow:
-    0 -30px 15px 0px rgb(55, 55, 104,.8),
-    0 -60px 15px 6px rgb(55, 55, 104,.8),
-    0 -70px 45px 15px rgb(55, 55, 104,.8),
-    inset -38px 0px 17px -29px rgba(224, 255, 83, 0.25),
+    inset -38px 0px 17px -29px rgba(224, 255, 83, 0.2),
     inset 19px 0px 8px -14px rgba(252, 255, 210, 0.3);
 }
 .engines div:last-child {
     box-shadow:
-    0 -30px 15px 0px rgb(55, 55, 104,.8),
-    0 -60px 15px 6px rgb(55, 55, 104,.8),
-    0 -70px 45px 15px rgb(55, 55, 104,.8),
-    inset 19px 0px 8px -17px rgba(255, 255, 255, 0.3),
     inset 38px 0px 23px -29px rgba(224, 255, 83, 0.25),
     inset -19px 0px 11px -15px rgb(0, 0, 0, .1);
 }
@@ -102,20 +93,20 @@ h2 {
     width:60px;
     background:yellow;
     margin:0 42px;
-    border-radius:100% 0% 100% 0% / 100% 0% 100% 0%;
+    border-radius:100% 0%;
     position:relative;
-    top:35px;
-    box-shadow: inset -70px 70px 20px -39px rgb(255, 81, 0);
+    top:25px;
+    box-shadow: inset -70px 70px 20px -33px rgb(255, 0, 0);
     animation: fire 1.5s ease-in-out infinite;
     transform:rotate(-45deg);
 }
 .cockpit {
     height:100px;
     width:100px;
-    background-image:url(/img/298px-Prap.jpg);
+    background-image:url(/img/im-394091.jfif);
     background-size:cover;
     position:absolute;
-    top:-5px;
+    top:-25px;
     border-radius:50%;
 }
 .cockpit:before {
@@ -123,13 +114,13 @@ h2 {
     display:inline-block; 
     height:100px;
     width:100px;
-    background:rgb(173, 162, 236,0.8);
+    background:rgba(163, 152, 228, 0.8);
     position:absolute;
     border-radius:50%;
     box-shadow: 
     inset 10px 10px 15px 3px rgba(255, 255, 255, .4),
-    inset -30px -5px 15px -15px rgb(0, 0, 0, .2),
-    inset 0px -20px 20px -15px rgba(211, 255, 15, 0.582);
+    inset 0px -20px 20px -15px rgba(211, 255, 15, 0.5),
+    inset -30px -5px 15px -15px rgb(0, 0, 0, .4);
 }
 article {
     width:100%;
@@ -221,17 +212,17 @@ article {
 @keyframes fire {
     50% {transform:translate(0,5px)scalex(.85)rotate(-45deg);}
 }
-@keyframes spaceship-entry {
-    0% {transform:translate(0,2000px)rotate(0deg)}
-    100% {transform:translate(0,0px)rotate(0deg)}
-}
+
 @keyframes spaceship {
     30% {transform:translate(-5px,-40px)}
     60% {transform:translate(5px,30px)}
     80% {transform:translate(11px,-5px)}
     100% {transform:translate(0,0px)}
 }
-
+@keyframes spaceship-entry {
+    0% {transform:translate(0,2000px)rotate(0deg)}
+    100% {transform:translate(0,0px)rotate(0deg)}
+}
 
 @media screen and (max-width: 1000px) {
     h2 {
