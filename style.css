@@ -36,7 +36,6 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
-    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .overflow-box {
     height:300px;
@@ -124,6 +123,7 @@ h2 {
     box-shadow: 
     inset 10px 10px 10px 3px rgba(255, 255, 255, .4),
     inset -30px -5px 10px -15px rgb(0, 0, 0, .2);
+    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 article {
     width:100%;
@@ -222,6 +222,13 @@ article {
     0% {transform:translate(0,2000px)rotate(0deg)}
     100% {transform:translate(0,0px)rotate(0deg)}
 }
+@keyframes spaceship {
+    30% {transform:translate(-5px,-40px)rotate(0deg)}
+    60% {transform:translate(5px,30px)rotate(-0deg)}
+    80% {transform:translate(11px,-5px)rotate(0deg)}
+    100% {transform:translate(0,0px)rotate(0deg)}
+}
+
 
 @media screen and (max-width: 1000px) {
     h2 {
