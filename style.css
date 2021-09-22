@@ -1,12 +1,12 @@
 body {
     margin:0;
     width:100%;
-    height:100%;
-    background:rgb(54, 54, 105);
+    background:rgb(54,54,105);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     overflow:hidden;
+    background: linear-gradient(180deg, rgb(54,54,105) 0%, rgba(31,31,40) 100%);
 }
 header {
     width:100%;
@@ -15,8 +15,6 @@ header {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    box-shadow: 
-    inset 0 -700px 1000px -300px rgb(0,0,0,0.3);
 }
 h2 {
     font-size:2rem;
@@ -36,6 +34,7 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
+    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .overflow-box {
     height:300px;
@@ -64,7 +63,6 @@ h2 {
     position:absolute;
     display:flex;
     flex-direction: column;
-    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .engines, .fire {
     display:flex;
@@ -93,13 +91,14 @@ h2 {
     0 -60px 15px 6px rgb(49, 49, 104),
     0 -70px 45px 15px rgb(49, 49, 104),
     inset -38px 0px 17px -29px rgba(224, 255, 83, 0.25),
-    inset 19px 0px 8px -14px rgba(255, 255, 255, 0.3);
+    inset 19px 0px 8px -14px rgba(252, 255, 210, 0.3);
 }
 .engines div:last-child {
     box-shadow:
     0 -30px 15px 0px rgb(49, 49, 104),
     0 -60px 15px 6px rgb(49, 49, 104),
     0 -70px 45px 15px rgb(49, 49, 104),
+    inset 19px 0px 8px -17px rgba(255, 255, 255, 0.3),
     inset 38px 0px 23px -29px rgba(224, 255, 83, 0.25),
     inset -19px 0px 11px -15px rgb(0, 0, 0, .1);
 }
