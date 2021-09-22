@@ -45,7 +45,6 @@ h2 {
     justify-content: center;
     border-radius:50% / 20%;
     position:relative;
-    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .spacehull {
     width:450px;
@@ -65,6 +64,7 @@ h2 {
     position:absolute;
     display:flex;
     flex-direction: column;
+    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .engines, .fire {
     display:flex;
