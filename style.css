@@ -120,7 +120,7 @@ h2 {
     background:rgb(173, 162, 236);
     position:absolute;
     border-radius:50%;
-    margin-top:50px;
+    margin-top:95px;
     box-shadow: 
     inset 10px 10px 10px 3px rgba(255, 255, 255, .4),
     inset -30px -5px 10px -15px rgb(0, 0, 0, .2);
@@ -219,8 +219,8 @@ article {
     50% {transform:translate(0,5px)scalex(.85)}
 }
 @keyframes spaceship-entry {
-    0% {transform:translate(0,2000px)rotate(0deg)}
-    100% {transform:translate(0,0px)rotate(0deg)}
+    0% {-webkit-transform:translate(0,2000px)rotate(0deg)}
+    100% {-webkit-transform:translate(0,0px)rotate(0deg)}
 }
 @keyframes spaceship {
     30% {transform:translate(-5px,-40px)rotate(0deg)}
