@@ -23,6 +23,8 @@ h2 {
     padding-left: 10px;
     line-height: 1.5em;
     font-family:'montserrat';
+    position:relative;
+    top:-170px;
 }
 .white-text {
     color:rgb(255,255,255,.9);
@@ -65,7 +67,7 @@ h2 {
     width:45px;
     background:rgb(52, 52, 100);
     border-radius:50% / 5px;
-    margin:0 55px;
+    margin:0 50px;
     position:relative;
     top:-50px;
 }
@@ -80,17 +82,17 @@ h2 {
 }
 .engines div:first-child {
     box-shadow:
-    0 -30px 15px 0px rgb(49, 49, 104,.6),
-    0 -60px 15px 6px rgb(49, 49, 104,.6),
-    0 -70px 45px 15px rgb(49, 49, 104,.6),
+    0 -30px 15px 0px rgb(55, 55, 104,.8),
+    0 -60px 15px 6px rgb(55, 55, 104,.8),
+    0 -70px 45px 15px rgb(55, 55, 104,.8),
     inset -38px 0px 17px -29px rgba(224, 255, 83, 0.25),
     inset 19px 0px 8px -14px rgba(252, 255, 210, 0.3);
 }
 .engines div:last-child {
     box-shadow:
-    0 -30px 15px 0px rgb(49, 49, 104,.6),
-    0 -60px 15px 6px rgb(49, 49, 104,.6),
-    0 -70px 45px 15px rgb(49, 49, 104,.6),
+    0 -30px 15px 0px rgb(55, 55, 104,.8),
+    0 -60px 15px 6px rgb(55, 55, 104,.8),
+    0 -70px 45px 15px rgb(55, 55, 104,.8),
     inset 19px 0px 8px -17px rgba(255, 255, 255, 0.3),
     inset 38px 0px 23px -29px rgba(224, 255, 83, 0.25),
     inset -19px 0px 11px -15px rgb(0, 0, 0, .1);
@@ -99,7 +101,7 @@ h2 {
     height:60px;
     width:60px;
     background:yellow;
-    margin:0 47px;
+    margin:0 42px;
     border-radius:100% 0% 100% 0% / 100% 0% 100% 0%;
     position:relative;
     top:35px;
@@ -110,9 +112,19 @@ h2 {
 .cockpit {
     height:100px;
     width:100px;
-    background:rgb(173, 162, 236);
+    background-image:url(/img/298px-Prap.jpg);
+    background-size:cover;
     position:absolute;
     top:-5px;
+    border-radius:50%;
+}
+.cockpit:before {
+    content:'';
+    display:inline-block; 
+    height:100px;
+    width:100px;
+    background:rgb(173, 162, 236,0.8);
+    position:absolute;
     border-radius:50%;
     box-shadow: 
     inset 10px 10px 15px 3px rgba(255, 255, 255, .4),
@@ -209,10 +221,10 @@ article {
 @keyframes fire {
     50% {transform:translate(0,5px)scalex(.85)rotate(-45deg);}
 }
-/* @keyframes spaceship-entry {
+@keyframes spaceship-entry {
     0% {transform:translate(0,2000px)rotate(0deg)}
     100% {transform:translate(0,0px)rotate(0deg)}
-} */
+}
 @keyframes spaceship {
     30% {transform:translate(-5px,-40px)}
     60% {transform:translate(5px,30px)}
