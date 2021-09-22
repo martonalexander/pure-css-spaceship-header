@@ -1,7 +1,6 @@
 body {
     margin:0;
     width:100%;
-    background:rgb(54,54,105);
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -18,7 +17,6 @@ header {
 }
 h2 {
     font-size:2rem;
-
     text-align:center;
     text-transform:uppercase;
     letter-spacing: 10px;
@@ -36,26 +34,17 @@ h2 {
     align-items: center;
     animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
-.overflow-box {
-    height:300px;
-    min-width:300px;
-    overflow:hidden;
-    display:flex;
-    justify-content: center;
-    border-radius:50% / 20%;
-    position:relative;
-}
 .spacehull {
-    width:450px;
-    height:450px;  
-    border-radius:100% 22.5px;
+    width:250px;
+    height:250px;  
+    border-radius:95% 5% 30% 60% / 30% 5% 95% 60% ;
     background:rgb(49, 49, 109);
     transform:rotate(-45deg);
     position:absolute;
-    top:130px;
+    margin-top:80px;
     box-shadow: 
-    inset 400px -400px 150px -250px rgba(224, 255, 83, 0.8),
-    inset 450px -450px 10px -273px rgba(255, 255, 255, 0.3),
+    inset 60px -60px 120px -100px rgba(224, 255, 83,.7),
+    inset 15px -15px 10px -20px rgb(255, 248, 146,.7),
     inset 5px 50px 5px -45px rgba(255, 255, 255, .5),
     inset -50px -5px 5px -42px rgb(0, 0, 0, .2);
 }
@@ -72,7 +61,7 @@ h2 {
     width:45px;
     background:rgb(52, 52, 100);
     border-radius:50% / 20%;
-    margin:300px 45px;
+    margin:300px 55px;
     margin-top:580px;
     position:relative;
     top:-40px;
@@ -87,17 +76,17 @@ h2 {
 }
 .engines div:first-child {
     box-shadow:
-    0 -30px 15px 0px rgb(49, 49, 104),
-    0 -60px 15px 6px rgb(49, 49, 104),
-    0 -70px 45px 15px rgb(49, 49, 104),
+    0 -30px 15px 0px rgb(49, 49, 104,.4),
+    0 -60px 15px 6px rgb(49, 49, 104,.4),
+    0 -70px 45px 15px rgb(49, 49, 104,.4),
     inset -38px 0px 17px -29px rgba(224, 255, 83, 0.25),
     inset 19px 0px 8px -14px rgba(252, 255, 210, 0.3);
 }
 .engines div:last-child {
     box-shadow:
-    0 -30px 15px 0px rgb(49, 49, 104),
-    0 -60px 15px 6px rgb(49, 49, 104),
-    0 -70px 45px 15px rgb(49, 49, 104),
+    0 -30px 15px 0px rgb(49, 49, 104,.4),
+    0 -60px 15px 6px rgb(49, 49, 104,.4),
+    0 -70px 45px 15px rgb(49, 49, 104,.4),
     inset 19px 0px 8px -17px rgba(255, 255, 255, 0.3),
     inset 38px 0px 23px -29px rgba(224, 255, 83, 0.25),
     inset -19px 0px 11px -15px rgb(0, 0, 0, .1);
@@ -106,7 +95,7 @@ h2 {
     height:60px;
     width:39px;
     background:yellow;
-    margin:0 48px;
+    margin:0 58px;
     border-radius:10% 10% 50% 50% / 10% 10% 100% 100%;
     position:relative;
     top:630px;
@@ -118,19 +107,18 @@ h2 {
     width:100px;
     background:rgb(173, 162, 236);
     position:absolute;
+    top:-10px;
     border-radius:50%;
-    margin-top:95px;
     box-shadow: 
-    inset 10px 10px 10px 3px rgba(255, 255, 255, .4),
-    inset -30px -5px 10px -15px rgb(0, 0, 0, .2);
+    inset 10px 10px 15px 3px rgba(255, 255, 255, .4),
+    inset -30px -5px 15px -15px rgb(0, 0, 0, .2),
+    inset 0px -20px 20px -15px rgba(211, 255, 15, 0.582);
 }
 article {
     width:100%;
     background:white;
     padding:15px;
 }
-
-
 .stars div, .stars div:before, .stars div:after {
     background:white;
     position:absolute;
@@ -156,7 +144,6 @@ article {
     height:5px;
     width:5px;
     left:-150px;
-
 }
 .stars1 div {
     animation:stars-slow 40s linear infinite;
@@ -217,10 +204,10 @@ article {
 @keyframes fire {
     50% {transform:translate(0,5px)scalex(.85)}
 }
-@keyframes spaceship-entry {
+/* @keyframes spaceship-entry {
     0% {transform:translate(0,2000px)rotate(0deg)}
     100% {transform:translate(0,0px)rotate(0deg)}
-}
+} */
 @keyframes spaceship {
     30% {transform:translate(-5px,-40px)rotate(0deg)}
     60% {transform:translate(5px,30px)rotate(-0deg)}
