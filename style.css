@@ -36,7 +36,7 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
-    animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
+    animation:spaceship 8s ease-in-out infinite;
 }
 .overflow-box {
     height:300px;
