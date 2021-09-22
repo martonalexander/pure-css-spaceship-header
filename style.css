@@ -34,7 +34,7 @@ h2 {
     display:flex;
     justify-content: center;
     align-items: center;
-    margin-top:70px;
+    margin-top:40px;
     animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
 }
 .spacehull {
@@ -103,7 +103,7 @@ h2 {
 .cockpit {
     height:100px;
     width:100px;
-    background-image:url(/img/im-394091.jfif);
+    background-image:url(/img/marton-space.jpg);
     background-size:cover;
     position:absolute;
     border-radius:50%;
