@@ -2,8 +2,8 @@ body {
     margin:0;
     width:100%;
     background:rgb(54,54,105);
+    overflow:hidden;
 }
-
 .wrapper {
     margin:0;
     width:100%;
@@ -12,7 +12,6 @@ body {
     flex-direction: column;
     overflow:hidden;
     background: linear-gradient(0deg, rgb(54,54,105) 0%, rgba(31,31,40) 100%);
-
 }
 header {
     width:100%;
@@ -40,25 +39,11 @@ h2 {
     display:none;
     animation:spaceship 8s ease-in-out 10s infinite, spaceship-entry 10s ease-in-out;
     width:100%;
-    margin-top:40px;
+    margin-top:20px;
     position:relative;
     z-index:1;
 }
-@keyframes spaceship {
-    30% {transform:translate(-5px,-40px)}
-    60% {transform:translate(5px,30px)}
-    80% {transform:translate(11px,-5px)}
-    100% {transform:translate(0,0px)}
-}
-@keyframes spaceship-entry {
-    0% {transform:translate(0,2000px)rotate(0deg)}
-    100% {transform:translate(0,0px)rotate(0deg)}
-}
-.spaceship {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .spacehull {
     width:250px;
     height:250px;  
@@ -233,7 +218,21 @@ article {
 @keyframes fire {
     50% {transform:translate(0,5px)scalex(.85)rotate(-45deg);}
 }
-
+@keyframes spaceship {
+    30% {transform:translate(-5px,-40px)}
+    60% {transform:translate(5px,30px)}
+    80% {transform:translate(11px,-5px)}
+    100% {transform:translate(0,0px)}
+}
+@keyframes spaceship-entry {
+    0% {transform:translate(0,2000px)rotate(0deg)}
+    100% {transform:translate(0,0px)rotate(0deg)}
+}
+.spaceship {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 @media screen and (max-width: 1000px) {
     h2 {
         font-size:1.3rem;
