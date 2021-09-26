@@ -136,9 +136,9 @@ header h2 {
     margin:0 42.5px;
     border-radius:100% 0%;
     position:relative;
-    top:65px;
+    top:60px;
     box-shadow: inset -70px 70px 20px -33px rgb(255, 0, 0);
-    animation: fire .7s ease-in-out infinite;
+    animation: fire 0.9s ease-in-out infinite;
     transform:rotate(-45deg);
 }
 .fire div:nth-child(2) {
