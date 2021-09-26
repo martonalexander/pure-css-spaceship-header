@@ -56,7 +56,7 @@ header h2 {
 }
 
 .spacehull {
-    width:250px;
+    width:200px;
     height:250px;  
     border-radius:50% / 95% 95% 5% 5%;
     background:rgb(49, 49, 109);
@@ -83,7 +83,7 @@ header h2 {
     width:45px;
     background:rgb(52, 52, 100);
     border-radius:50% / 5px;
-    margin:0 60px;
+    margin:0 50px;
     position:relative;
     top:-26px;
 }
@@ -129,7 +129,7 @@ header h2 {
     height:60px;
     width:60px;
     background:yellow;
-    margin:0 52.5px;
+    margin:0 42.5px;
     border-radius:100% 0%;
     position:relative;
     top:65px;
@@ -156,7 +156,7 @@ header h2 {
     }
     .space-leg div:first-child {
         transform:rotate(-30deg)skewx(-30deg);
-        right:110px;
+        right:90px;
     }
     .space-leg div:nth-child(2) {
         width:10px;
@@ -166,7 +166,7 @@ header h2 {
     }
     .space-leg div:last-child {
         transform:rotate(30deg)skewx(30deg);
-        right:-110px;
+        right:-90px;
     }
     .cockpit {
         height:100px;
