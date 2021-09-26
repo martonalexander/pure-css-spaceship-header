@@ -294,10 +294,10 @@ article {
     80% {transform:translate(11px,-5px)}
     100% {transform:translate(0,0px)}
 }
-/* @keyframes spaceship-entry {
+@keyframes spaceship-entry {
     0% {transform:translate(0,2000px)rotate(0deg)}
     100% {transform:translate(0,0px)rotate(0deg)}
-} */
+}
 .spaceship {
     display:flex;
     justify-content: center;
