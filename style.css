@@ -82,9 +82,9 @@ header h2 {
     width:45px;
     background:rgb(52, 52, 100);
     border-radius:50% / 5px;
-    margin:0 50px;
+    margin:0 60px;
     position:relative;
-    top:-50px;
+    top:-26px;
 }
 .engines div::before {
     content:'';
@@ -98,7 +98,7 @@ header h2 {
 .engines div:first-child::before {
     box-shadow:inset 10px -5px 8px -7px rgba(83, 255, 218, 0.3);
 }
-.engines div:last-child::before {
+.engines div:last-child::before, .engines div:nth-child(2)::before {
     box-shadow:inset 10px -5px 8px -7px rgba(108, 108, 138, 0.3);
 }
 .engines div:first-child {
@@ -106,6 +106,16 @@ header h2 {
     inset -38px 0px 17px -29px rgba(224, 255, 83, 0.2),
     inset 0px -20px 20px -15px rgba(211, 255, 15, 0.2),
     inset 19px 0px 18px -17px rgba(255, 255, 255, 0.35);
+}
+.engines div:nth-child(2) {
+    margin-top:10px;
+    box-shadow:
+    inset -38px 0px 17px -29px rgba(224, 255, 83, 0.17),
+    inset 38px 0px 23px -29px rgba(224, 255, 83, 0.17),
+    inset 0px -20px 20px -15px rgba(211, 255, 15, 0.2),
+    inset -19px 0px 11px -15px rgb(0, 0, 0, .1);
+    z-index:5;
+    
 }
 .engines div:last-child {
     box-shadow:
@@ -118,16 +128,47 @@ header h2 {
     height:60px;
     width:60px;
     background:yellow;
-    margin:0 42px;
+    margin:0 52.5px;
     border-radius:100% 0%;
     position:relative;
-    top:25px;
+    top:65px;
     box-shadow: inset -70px 70px 20px -33px rgb(255, 0, 0);
     animation: fire .7s ease-in-out infinite;
     transform:rotate(-45deg);
 }
-.cockpit {
-    height:100px;
+.fire div:nth-child(2) {
+        margin-top:10px;
+    }
+    .space-leg {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .space-leg div {
+        height:25px;
+        width:40px;
+        background:rgb(175, 32, 32);
+        position:relative;
+        z-index:-1;
+        top:105px;
+        box-shadow:inset 0 10px 15px 1px rgb(80, 14, 14);
+    }
+    .space-leg div:first-child {
+        transform:rotate(-30deg)skewx(-30deg);
+        right:110px;
+    }
+    .space-leg div:nth-child(2) {
+        width:10px;
+        height:60px;
+        top:120px;
+        z-index:0;
+    }
+    .space-leg div:last-child {
+        transform:rotate(30deg)skewx(30deg);
+        right:-110px;
+    }
+    .cockpit {
+        height:100px;
     width:100px;
     background-image:url(img/im-394091.jfif);
     background-size:cover;
